@@ -105,7 +105,7 @@ Then open the printed localhost URL. ES modules need a server.
 - Garments are stylised flat-lay drawings, not product photography; that is by design.
 - Fibre facts are general descriptions of common processes, not claims about a specific supply chain.
 - The pinned rooms track is enabled only above 1100px wide.
-- `og.png` is rendered separately by the lead.
+- `og.jpg` is rendered separately by the lead.
 
 ---
 
