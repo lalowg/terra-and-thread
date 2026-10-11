@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 64" width="600" height="128" role="img" aria-labelledby="t">
+  <title id="t">Terra &amp; Thread</title>
+  <rect width="300" height="64" fill="#EFE6D6"/>
+  <g transform="translate(8 6)">
+    <circle cx="24" cy="26" r="17" fill="none" stroke="#A65A3A" stroke-width="1.6"/>
+    <path d="M9.5 22 H38.5 M8 28 H40 M10 34 H38" stroke="#4E5B3A" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M24 4 C24 12 20 16 20 22 S28 25 28 28 S20 31 20 34 S24 40 24 45" fill="none" stroke="#2E3A5C" stroke-width="1.8" stroke-linecap="round"/>
+    <ellipse cx="24" cy="5.2" rx="1.6" ry="3.2" fill="none" stroke="#2E3A5C" stroke-width="1.2"/>
+  </g>
+  <text x="66" y="41" font-family="'Young Serif', Georgia, 'Times New Roman', serif" font-size="25" fill="#2B2621">Terra <tspan fill="#A65A3A">&amp;</tspan> Thread</text>
+</svg>

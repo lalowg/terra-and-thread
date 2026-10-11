@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TERRA &amp; THREAD — Wear the Change</title>
+<meta name="description" content="Terra &amp; Thread makes clothes you can trace from field to fold. Follow linen, wool, hemp and cotton from fibre to yarn to cloth to garment, explore the A/W 26 collection by material and learn how each piece is made to be mended.">
+<meta name="theme-color" content="#EFE6D6">
+<link rel="canonical" href="https://terra-and-thread.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TERRA &amp; THREAD">
+<meta property="og:title" content="TERRA &amp; THREAD — Wear the Change">
+<meta property="og:description" content="Follow a fibre from the field to a finished garment, then explore a small collection built to be worn for years and mended when it needs it.">
+<meta property="og:url" content="https://terra-and-thread.vercel.app/">
+<meta property="og:image" content="https://terra-and-thread.vercel.app/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TERRA &amp; THREAD — Wear the Change">
+<meta name="twitter:description" content="Fibre, yarn, cloth, garment: an interactive journey through a small clothing collection.">
+<meta name="twitter:image" content="https://terra-and-thread.vercel.app/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=Young+Serif&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.ttReady)document.documentElement.classList.remove('js');},3500);</script>
+<script type="module" src="main.js"></script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<svg class="defs" aria-hidden="true" focusable="false" width="0" height="0"><defs>
+<pattern id="tx-linen" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 1.5h3.2M3 4.5h3.2" stroke="#fff" stroke-opacity=".24" stroke-width="1.3"/><path d="M1.5 0v3.2M4.5 3v3.2" stroke="#000" stroke-opacity=".13" stroke-width="1.3"/></pattern>
+<pattern id="tx-linen-slub" width="47" height="29" patternUnits="userSpaceOnUse"><path d="M3 5h14M26 14h17M9 23h11M34 26h9" stroke="#fff" stroke-opacity=".28" stroke-width="1.4" stroke-linecap="round"/><path d="M18 9h8M2 18h9" stroke="#000" stroke-opacity=".12" stroke-width="1.2" stroke-linecap="round"/></pattern>
+<pattern id="tx-wool" width="8" height="9" patternUnits="userSpaceOnUse"><path d="M0 0 L4 6 L8 0" fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="1.5"/><path d="M0 4.5 L4 10.5 L8 4.5" fill="none" stroke="#000" stroke-opacity=".12" stroke-width="1.1"/></pattern>
+<pattern id="tx-hemp" width="5" height="5" patternUnits="userSpaceOnUse"><path d="M0 1.2h5" stroke="#fff" stroke-opacity=".2" stroke-width="1.6"/><path d="M1.2 0v5" stroke="#000" stroke-opacity=".16" stroke-width="1.4"/><path d="M3.6 2.5v1" stroke="#fff" stroke-opacity=".2" stroke-width="1"/></pattern>
+<pattern id="tx-cotton" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M-1 7 L7 -1" stroke="#E6DCC6" stroke-opacity=".34" stroke-width="1.3"/><path d="M-1 4 L4 -1 M2 7 L7 2" stroke="#000" stroke-opacity=".12" stroke-width=".9"/></pattern>
+<linearGradient id="gm-shade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".2"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient>
+<radialGradient id="gm-floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#2B2621" stop-opacity=".22"/><stop offset="1" stop-color="#2B2621" stop-opacity="0"/></radialGradient>
+<symbol id="tt-mark" viewBox="0 0 48 48">
+  <circle cx="24" cy="26" r="17" fill="none" stroke="var(--mark-clay, #A65A3A)" stroke-width="1.6"/>
+  <path d="M9.5 22 H38.5 M8 28 H40 M10 34 H38" stroke="var(--mark-moss, #4E5B3A)" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M24 4 C24 12 20 16 20 22 S28 25 28 28 S20 31 20 34 S24 40 24 45" fill="none" stroke="var(--mark-indigo, #2E3A5C)" stroke-width="1.8" stroke-linecap="round"/>
+  <ellipse cx="24" cy="5.2" rx="1.6" ry="3.2" fill="none" stroke="var(--mark-indigo, #2E3A5C)" stroke-width="1.2"/>
+</symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10-6.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+<symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></symbol>
+</defs></svg>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="#top" aria-label="Terra &amp; Thread, back to the top">
+    <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#tt-mark"/></svg>
+    <span class="brand__word">Terra <i>&amp;</i> Thread</span>
+  </a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-btn__lines" aria-hidden="true"></span><span>Menu</span></button>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="#journey">The journey</a></li>
+      <li><a href="#path">Four rooms</a></li>
+      <li><a href="#collection">Collection</a></li>
+      <li><a href="#materials">Materials</a></li>
+      <li><a href="#mending">Mending</a></li>
+      <li class="site-nav__cta"><a href="#reserve">Reserve</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main" tabindex="-1">
+
+<!-- ============ THE JOURNEY (signature) ============ -->
+<section id="journey" class="hero" aria-labelledby="hero-title">
+  <p class="masthead" aria-hidden="true"><span>Field notes No. 04</span><span>Autumn / Winter 2026</span><span>Four fibres, one journey</span></p>
+
+  <div class="hero__copy">
+    <p class="eyebrow">Clothing from field to fold</p>
+    <h1 id="hero-title" class="stitch-in">Wear the <em>change.</em></h1>
+    <p class="hero__lede">Every garment starts as a plant or a fleece. Follow one fibre as it becomes yarn, then cloth, then something you can wear. Choose another fibre and the journey begins again.</p>
+
+    <fieldset class="mat-pick" id="mat-pick">
+      <legend>Choose a fibre</legend>
+      <label class="mat-pick__opt"><input type="radio" name="fibre" value="linen" checked><span class="mat-pick__sw sw--linen" aria-hidden="true"></span><span class="mat-pick__name">Linen</span></label>
+      <label class="mat-pick__opt"><input type="radio" name="fibre" value="wool"><span class="mat-pick__sw sw--wool" aria-hidden="true"></span><span class="mat-pick__name">Wool</span></label>
+      <label class="mat-pick__opt"><input type="radio" name="fibre" value="hemp"><span class="mat-pick__sw sw--hemp" aria-hidden="true"></span><span class="mat-pick__name">Hemp</span></label>
+      <label class="mat-pick__opt"><input type="radio" name="fibre" value="cotton"><span class="mat-pick__sw sw--cotton" aria-hidden="true"></span><span class="mat-pick__name">Cotton</span></label>
+    </fieldset>
+
+    <p class="hero__ctas">
+      <a class="btn" href="#collection">Explore the collection <svg aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+      <a class="link-thread" href="#path">How a garment is made</a>
+    </p>
+  </div>
+
+  <div class="hero__stage">
+    <figure class="stage-card" id="stage-card">
+      <span class="tape tape--l" aria-hidden="true"></span><span class="tape tape--r" aria-hidden="true"></span>
+      <svg class="journey-svg" id="journey-svg" viewBox="0 0 800 600" role="img" aria-labelledby="journey-desc">
+        <desc id="journey-desc">An illustrated specimen that changes with each step: loose fibres, a twisted yarn, a woven swatch and a finished garment.</desc>
+        <g class="layers" id="journey-layers">
+<g class="stage-garment" data-mat="linen"><g class="gm " data-garment="shirt">
+<ellipse cx="400" cy="526" rx="191.4" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="#D8CBAE"/>
+<path d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="url(#tx-linen)"/><path d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="url(#tx-linen-slub)"/>
+<path d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="none" stroke="#6F5B3C" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M362 118 L392 168 L400 152 L408 168 L438 118 M400 160 V512 M310 214 h56 v52 h-56 z M238 330 L226 304 M562 330 L574 304" fill="none" stroke="#6F5B3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+<circle class="gm__btn" cx="400" cy="200" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="262" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="324" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="386" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="448" r="5" fill="#6F5B3C"/>
+</g></g>
+<g class="stage-garment" data-mat="wool"><g class="gm " data-garment="jumper">
+<ellipse cx="400" cy="514" rx="185.8" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="#8C9570"/>
+<path d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="url(#tx-wool)"/>
+<path d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="none" stroke="#3A4429" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M365 122 Q400 160 435 122 M372 128 Q400 154 428 128 M282 474 H518 M290 476 V500 M310 476 V500 M330 476 V500 M350 476 V500 M370 476 V500 M390 476 V500 M410 476 V500 M430 476 V500 M450 476 V500 M470 476 V500 M490 476 V500 M510 476 V500 M204 330 L250 338 M596 330 L550 338" fill="none" stroke="#3A4429" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+
+</g></g>
+<g class="stage-garment" data-mat="hemp"><g class="gm " data-garment="smock">
+<ellipse cx="400" cy="544" rx="171.1" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="#CE9878"/>
+<path d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="url(#tx-hemp)"/>
+<path d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="none" stroke="#7E3F25" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M360 120 L400 160 L440 120 M290 200 Q400 222 510 200 M330 380 h140 v74 h-140 z M400 380 v74 M266 500 H534" fill="none" stroke="#7E3F25" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+
+</g></g>
+<g class="stage-garment" data-mat="cotton"><g class="gm " data-garment="jacket">
+<ellipse cx="400" cy="524" rx="187.7" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="#46557E"/>
+<path d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="url(#tx-cotton)"/>
+<path d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="none" stroke="#1F2842" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M358 116 L376 176 L400 170 L424 176 L442 116 M394 176 V510 M300 250 h58 v56 h-58 z M290 380 h70 v70 h-70 z M440 380 h70 v70 h-70 z M200 320 L246 328 M600 320 L554 328" fill="none" stroke="#1F2842" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 3"/>
+<circle class="gm__btn" cx="394" cy="214" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="280" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="346" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="412" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="478" r="5" fill="#1F2842"/>
+</g></g>
+<g class="stage-swatch" data-mat="linen">
+<rect x="250" y="150" width="300" height="300" fill="#D8CBAE"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#tx-linen)"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#gm-shade)"/>
+<path d="M254 452 l-3 16.3 M265.5 452 l-1.3 9.9 M277 452 l1.4 12.8 M288.5 452 l-1 14.8 M300 452 l1.5 12.9 M311.5 452 l1.1 13.7 M323 452 l1.9 10.2 M334.5 452 l-0.8 14.4 M346 452 l1.2 8.5 M357.5 452 l1.1 12.2 M369 452 l2.5 15.3 M380.5 452 l-2.3 12.6 M392 452 l2.5 14.2 M403.5 452 l0.9 13.2 M415 452 l2.5 16.2 M426.5 452 l-0.8 11 M438 452 l2 11 M449.5 452 l-2.1 10.7 M461 452 l-0.4 10.7 M472.5 452 l2.6 13 M484 452 l1.4 15.9 M495.5 452 l-2.6 10.5 M507 452 l0.4 12.6 M518.5 452 l-0.5 9.7 M530 452 l2.5 8.5 M541.5 452 l-0.8 11.1" stroke="#8A7350" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+</g>
+<g class="stage-swatch" data-mat="wool">
+<rect x="250" y="150" width="300" height="300" fill="#8C9570"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#tx-wool)"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#gm-shade)"/>
+<path d="M254 452 l1 16.3 M265.5 452 l0.1 9.5 M277 452 l-0.6 10.6 M288.5 452 l-0.8 11.8 M300 452 l-1 12.8 M311.5 452 l0.7 10.1 M323 452 l2.4 12.1 M334.5 452 l2.2 13.7 M346 452 l0.8 12.6 M357.5 452 l0 14.2 M369 452 l2.6 11.6 M380.5 452 l1.2 10.3 M392 452 l0.5 11.2 M403.5 452 l-1 11.5 M415 452 l1.8 15.9 M426.5 452 l-2.3 15.4 M438 452 l-2.5 11.7 M449.5 452 l-2.1 8.7 M461 452 l3 10 M472.5 452 l0.8 9.3 M484 452 l-0.3 13.3 M495.5 452 l-2.2 16.3 M507 452 l2.3 16 M518.5 452 l2.3 16.2 M530 452 l1.6 10.5 M541.5 452 l-2.9 10.2" stroke="#4E5B3A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+</g>
+<g class="stage-swatch" data-mat="hemp">
+<rect x="250" y="150" width="300" height="300" fill="#CE9878"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#tx-hemp)"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#gm-shade)"/>
+<path d="M254 452 l-2.5 8 M265.5 452 l0.7 10.1 M277 452 l1.4 12.4 M288.5 452 l1.1 10.1 M300 452 l2.3 10.1 M311.5 452 l-0.8 16 M323 452 l-2.3 12.4 M334.5 452 l-3 16.2 M346 452 l0.8 16.3 M357.5 452 l-2.9 16.1 M369 452 l-1.9 16.7 M380.5 452 l0.4 14.1 M392 452 l-1.4 10 M403.5 452 l-1.7 13.1 M415 452 l-2.7 14.9 M426.5 452 l1.2 14.4 M438 452 l0 8.3 M449.5 452 l-2.3 16.3 M461 452 l-2.2 14.2 M472.5 452 l2.4 8.3 M484 452 l2.3 15.8 M495.5 452 l3 16.6 M507 452 l1.6 11.8 M518.5 452 l-1.5 14.5 M530 452 l2.3 11.6 M541.5 452 l-1.6 11.6" stroke="#A65A3A" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+</g>
+<g class="stage-swatch" data-mat="cotton">
+<rect x="250" y="150" width="300" height="300" fill="#46557E"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#tx-cotton)"/>
+<rect x="250" y="150" width="300" height="300" fill="url(#gm-shade)"/>
+<path d="M254 452 l2.3 13 M265.5 452 l-0.9 13.6 M277 452 l1.4 11 M288.5 452 l1.4 11.8 M300 452 l-1.8 10.8 M311.5 452 l2.9 16.9 M323 452 l0.8 15.8 M334.5 452 l2.5 9.8 M346 452 l0.9 9.2 M357.5 452 l0 13 M369 452 l1.6 16.5 M380.5 452 l-0.1 9.7 M392 452 l-0.3 9.5 M403.5 452 l1 12.7 M415 452 l0.4 12.6 M426.5 452 l1.5 11.3 M438 452 l1.5 8.2 M449.5 452 l-1.2 12.9 M461 452 l-1.8 14.5 M472.5 452 l-1.3 10.1 M484 452 l1 11.9 M495.5 452 l-2.5 15 M507 452 l1.9 16.2 M518.5 452 l2.5 14.1 M530 452 l2.8 8.2 M541.5 452 l1.6 13.4" stroke="#2E3A5C" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+</g>
+        </g>
+        <g class="strands" id="strands" fill="none" stroke-linecap="round"></g>
+      </svg>
+      <figcaption class="specimen">
+        <span class="specimen__no">Specimen <b id="spec-no">01</b></span>
+        <span class="specimen__label" id="spec-label">Linen · Fibre</span>
+      </figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="steps__list" role="tablist" aria-label="Journey steps">
+        <button class="step" role="tab" id="step-0" aria-selected="true" aria-controls="step-note" tabindex="0" data-step="0"><span class="step__no">01</span><span class="step__name">Fibre</span></button>
+        <button class="step" role="tab" id="step-1" aria-selected="false" aria-controls="step-note" tabindex="-1" data-step="1"><span class="step__no">02</span><span class="step__name">Yarn</span></button>
+        <button class="step" role="tab" id="step-2" aria-selected="false" aria-controls="step-note" tabindex="-1" data-step="2"><span class="step__no">03</span><span class="step__name">Weave</span></button>
+        <button class="step" role="tab" id="step-3" aria-selected="false" aria-controls="step-note" tabindex="-1" data-step="3"><span class="step__no">04</span><span class="step__name">Garment</span></button>
+        <span class="steps__thread" aria-hidden="true"><i id="steps-progress"></i></span>
+      </div>
+      <div class="steps__ctl">
+        <button class="round-btn" type="button" id="step-prev" aria-label="Previous step"><svg aria-hidden="true" focusable="false"><use href="#i-prev"/></svg></button>
+        <button class="round-btn" type="button" id="step-play" aria-pressed="true" aria-label="Pause the journey"><svg aria-hidden="true" focusable="false"><use href="#i-pause"/></svg></button>
+        <button class="round-btn" type="button" id="step-next" aria-label="Next step"><svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></button>
+      </div>
+    </div>
+    <div class="step-note" id="step-note" role="tabpanel" aria-labelledby="step-0">
+      <h2 class="step-note__title" id="step-title">Fibre <em>from flax</em></h2>
+      <p class="step-note__text" id="step-text">Flax stalks are pulled from the ground rather than cut, retted, then combed into long, pale fibres with a natural sheen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUR ROOMS (horizontal journey track) ============ -->
+<section id="path" class="rooms" aria-labelledby="rooms-title">
+  <div class="rooms__track" id="rooms-track">
+    <div class="rooms__pin">
+      <header class="rooms__head">
+        <p class="eyebrow">The long way round</p>
+        <h2 id="rooms-title" class="stitch-in">From field to fold, <em>in four rooms.</em></h2>
+        <div class="rooms__ctl">
+          <span class="rooms__progress" aria-hidden="true"><i id="rooms-bar"></i></span>
+          <button class="round-btn" type="button" id="rooms-prev" aria-label="Previous room" aria-controls="rooms-viewport"><svg aria-hidden="true" focusable="false"><use href="#i-prev"/></svg></button>
+          <button class="round-btn" type="button" id="rooms-next" aria-label="Next room" aria-controls="rooms-viewport"><svg aria-hidden="true" focusable="false"><use href="#i-next"/></svg></button>
+        </div>
+      </header>
+      <div class="rooms__viewport" id="rooms-viewport" tabindex="0" role="region" aria-label="Four rooms, scrolls sideways">
+        <ol class="rooms__list" id="rooms-list">
+          <li class="room">
+            <figure class="room__art"><svg class="scene" viewBox="0 0 640 440" aria-hidden="true" focusable="false">
+<defs><linearGradient id="sc1-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3E7D2"/><stop offset="1" stop-color="#E9C9AE"/></linearGradient>
+<pattern id="sc-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)"><path d="M0 0V5" stroke="#A65A3A" stroke-width=".8" stroke-opacity=".5"/></pattern></defs>
+<rect width="640" height="440" fill="url(#sc1-sky)"/>
+<circle cx="452" cy="132" r="54" fill="#E7A983"/><circle cx="452" cy="132" r="54" fill="url(#sc-hatch)"/>
+<path d="M0 238 C90 200 170 214 250 226 S420 190 520 204 S610 214 640 206 V440 H0 Z" fill="#8C9570" opacity=".55"/>
+<path d="M0 282 C120 246 220 268 330 262 S520 236 640 252 V440 H0 Z" fill="#6D7852"/>
+<path d="M0 330 C140 312 280 326 420 318 S580 306 640 312 V440 H0 Z" fill="#4E5B3A"/><path d="M0 344 C180 334 420 352 640 340 M0 359 C180 349 420 367 640 355 M0 374 C180 364 420 382 640 370 M0 389 C180 379 420 397 640 385 M0 404 C180 394 420 412 640 400 M0 419 C180 409 420 427 640 415 M0 434 C180 424 420 442 640 430 " fill="none" stroke="#3A4429" stroke-width="1" opacity=".55"/><path d="M463.4 429.8 q-2.3 -37 -5.8 -74.1 M69.3 348.5 q1.8 -35.5 4.5 -71 M85.5 360.2 q-1.4 -72.1 -3.4 -144.2 M270.5 407.4 q0 -77.6 -0.1 -155.2 M39.2 363 q5.1 -79.4 12.6 -158.8 M592.3 390.9 q-1.7 -41.7 -4.2 -83.4 M50 367.3 q1.4 -70.6 3.4 -141.1 M48.1 381.3 q-3.5 -52.3 -8.7 -104.6 M264.6 349.1 q4.6 -47.9 11.5 -95.8 M279.6 425.5 q3.5 -87.9 8.8 -175.9 M222.7 380.7 q0.8 -62.3 2.1 -124.7 M425.7 403.3 q4.3 -75.1 10.7 -150.2 M280.4 388.7 q5.1 -87.6 12.7 -175.3 M50.7 374.3 q2.7 -83.5 6.8 -167.1 M503.7 360.7 q3.5 -48.1 8.8 -96.2 M586 420 q2.7 -69.9 6.9 -139.9 M558.1 396.3 q-1.1 -83.1 -2.8 -166.1 M252.9 358.8 q-1.5 -67.4 -3.7 -134.8 M216.3 408.3 q-2.5 -83.3 -6.2 -166.5 M589.4 340.1 q0 -42.2 -0.1 -84.5 M443.4 429.8 q-1.7 -44.5 -4.1 -89 M112.1 351.7 q-3.4 -69.5 -8.4 -138.9 M480.7 352.8 q2.8 -53.2 6.9 -106.4 M376.4 417.7 q2.9 -73.6 7.3 -147.3 M29 401.3 q1.6 -47.4 4 -94.7 M142.7 402 q3.6 -69.6 9.1 -139.2 M579.5 345.3 q0.1 -73 0.1 -146 M515 350.5 q0.9 -85.6 2.2 -171.1 M554.4 419.1 q4.5 -75 11.2 -150 M460.6 355.5 q4.8 -41.9 12.1 -83.8 M49.2 366.2 q4.1 -86.7 10.3 -173.5 M126.9 343 q1.4 -60.8 3.5 -121.7 M206.8 388.1 q-3 -47.5 -7.6 -94.9 M59.8 402.9 q3.6 -60.7 9 -121.5 M448.2 378.8 q5 -68.7 12.4 -137.5 M455.4 400.3 q-2 -79.1 -5 -158.3 M465 404.7 q1.3 -58.7 3.2 -117.4 M316.4 352.2 q-2.8 -38.6 -7.1 -77.3 M220.6 360 q-2.4 -70.2 -6 -140.4 M1 423.6 q-3.1 -82.8 -7.8 -165.6 M257.5 430.8 q-3.4 -78.8 -8.5 -157.6 M411.4 382.8 q-2 -36.8 -5 -73.7 M159.4 425.8 q-0.7 -79.7 -1.8 -159.5 M162.1 428.2 q2.4 -82.9 6.1 -165.7 M524.7 421.3 q5 -76.8 12.5 -153.7 M455.7 372.4 q-2.1 -82.5 -5.2 -165 M522.2 386.7 q3.8 -78.8 9.4 -157.5 M148.4 359.6 q1.6 -36.3 3.9 -72.6 M546.2 426.5 q-1.7 -79.7 -4.2 -159.5 M247.1 393.8 q1 -76.3 2.6 -152.6 M319.8 364.5 q3.3 -73.7 8.2 -147.4 M162.9 401.4 q4.7 -65.3 11.8 -130.7 M384.2 397.4 q1.5 -70 3.8 -139.9 M133.6 351.8 q2.1 -53.3 5.1 -106.7 M249.1 374.7 q-2.4 -56.9 -6 -113.8 M34 387.6 q-2.7 -55.7 -6.8 -111.3 M292.8 350 q-1.1 -81.2 -2.8 -162.4 M77.8 360.3 q-1.8 -59.1 -4.4 -118.1 M482.5 418.5 q4.1 -62.1 10.3 -124.2 M399.3 413.6 q1.6 -84 4 -168 M636.7 343.7 q-0.8 -40.7 -2 -81.4 M463 394.7 q1.2 -48.2 3 -96.3 M519.6 408.3 q4.8 -67 12.1 -134 M18.2 413.5 q1.9 -63.3 4.7 -126.6 M29.1 410.6 q3.9 -89 9.8 -177.9 M139.7 403 q0.3 -66.2 0.9 -132.4 M552.2 405.3 q-0.8 -88.7 -2 -177.4 M365.4 402.2 q-1.4 -45.9 -3.5 -91.8 M276.8 344.7 q3.4 -66.2 8.4 -132.4 M195.9 401.5 q-0.7 -58.2 -1.8 -116.5 M46.9 376.9 q2.1 -58.8 5.2 -117.5 M276.4 402.3 q4.8 -84.4 12 -168.8 M627.8 404.9 q2 -57.2 5 -114.5 M183.4 342.8 q-2.5 -81.2 -6.3 -162.5 M426.5 362.1 q-2.3 -50 -5.7 -99.9 M399.7 415.6 q3.7 -35.8 9.4 -71.6 M610.4 347.3 q-3.2 -45 -7.9 -89.9 M177 392.3 q2.7 -80.9 6.8 -161.9 M73.3 401.7 q-2.7 -76.2 -6.9 -152.4 M259.4 417 q2 -72.2 5.1 -144.3 M595.4 439.8 q2.8 -69 7.1 -138 M569.1 356 q2.6 -53.9 6.5 -107.8 M297 438.5 q1.3 -59.6 3.3 -119.3 M109.6 358.4 q-0.6 -81.1 -1.4 -162.2 M82.3 387.9 q-3.4 -62.9 -8.5 -125.9 M278.2 361.1 q2.1 -38.7 5.2 -77.4 M83.2 423.3 q4.5 -36.1 11.3 -72.3 M428.4 408.2 q-1.1 -81.3 -2.7 -162.5 M0.7 352.2 q-3 -39.9 -7.5 -79.8 M141.8 376.1 q-1.4 -71 -3.4 -142 M458.2 415 q4.1 -72.4 10.2 -144.9 M177.8 394.7 q1.7 -57.2 4.2 -114.5 M352.6 427.9 q0.1 -81.9 0.2 -163.8 M622.8 413.9 q-1.4 -86.5 -3.5 -173 M456.6 396.8 q4.4 -70.6 10.9 -141.3 M307.9 384.2 q3.1 -77.4 7.7 -154.7 M3.7 369.7 q1.4 -76.8 3.5 -153.6 M353 432.7 q4.9 -35.6 12.2 -71.2 M550.8 431.5 q-3 -85.5 -7.6 -170.9 M447.4 348.9 q-2.8 -57.7 -7.1 -115.3 M236.5 371.5 q-3.4 -56.4 -8.5 -112.8 M267.1 420.1 q-3.1 -80.1 -7.7 -160.2 M365.9 403.4 q-2.5 -42.4 -6.2 -84.9 M28.6 367.7 q-1.9 -71.5 -4.7 -143.1 M357.8 355.8 q2.6 -58.2 6.6 -116.3 M279.3 370.9 q-1.8 -56.5 -4.5 -112.9 M140.7 402.3 q-3.2 -71.1 -8.1 -142.1 M69.1 412.4 q2.5 -72.6 6.2 -145.2 M37.8 364.4 q-0.3 -44.1 -0.7 -88.2 M129.2 343.2 q1 -43.5 2.4 -87 M330 402.9 q4.6 -42 11.4 -84 M600.5 409.1 q-0.1 -43.1 -0.3 -86.2 M176.4 354.9 q3.4 -57.3 8.6 -114.6 M520.3 425.2 q-3.5 -64.6 -8.7 -129.2 M614.5 406.6 q3.8 -75.5 9.5 -151 M491.8 376.1 q-3.4 -64.5 -8.5 -129 M329.3 389 q-2.2 -56.3 -5.4 -112.6 M339.1 350.1 q3.3 -36.3 8.1 -72.6 M548.6 406.9 q3.8 -75.8 9.6 -151.6 M580.1 377.4 q-3.3 -55.6 -8.1 -111.1 " fill="none" stroke="#3A4429" stroke-width="1.1" stroke-linecap="round"/><g fill="#5A6C9C"><circle cx="73.8" cy="277.4" r="2.5"/><circle cx="82.1" cy="216" r="3.8"/><circle cx="588.2" cy="307.4" r="2.5"/><circle cx="53.4" cy="226.2" r="3.8"/><circle cx="276.1" cy="253.4" r="3.4"/><circle cx="288.4" cy="249.6" r="3.1"/><circle cx="224.8" cy="256" r="3.4"/><circle cx="436.3" cy="253.1" r="3.8"/><circle cx="57.5" cy="207.2" r="3.7"/><circle cx="592.8" cy="280.1" r="2.9"/><circle cx="555.3" cy="230.2" r="2.9"/><circle cx="249.1" cy="224" r="3.5"/><circle cx="439.3" cy="340.8" r="3.3"/><circle cx="103.7" cy="212.8" r="3.1"/><circle cx="487.6" cy="246.4" r="3.1"/><circle cx="383.8" cy="270.5" r="2.4"/><circle cx="579.7" cy="199.3" r="3.3"/><circle cx="517.2" cy="179.3" r="2.9"/><circle cx="565.6" cy="269.1" r="2.5"/><circle cx="472.7" cy="271.7" r="2.3"/><circle cx="59.6" cy="192.7" r="2.6"/><circle cx="68.8" cy="281.5" r="3"/><circle cx="460.7" cy="241.3" r="3.7"/><circle cx="-6.8" cy="257.9" r="2.7"/><circle cx="248.9" cy="273.2" r="2.5"/><circle cx="406.4" cy="309.1" r="3.4"/><circle cx="157.6" cy="266.3" r="2.7"/><circle cx="168.2" cy="262.4" r="3.6"/><circle cx="537.2" cy="267.6" r="2.7"/><circle cx="450.5" cy="207.4" r="3.3"/><circle cx="152.3" cy="287" r="3.2"/><circle cx="542" cy="267.1" r="2.9"/><circle cx="174.8" cy="270.7" r="2.7"/><circle cx="138.7" cy="245.1" r="3.2"/><circle cx="27.2" cy="276.3" r="2.8"/><circle cx="73.4" cy="242.2" r="3.1"/><circle cx="492.8" cy="294.3" r="2.4"/><circle cx="403.3" cy="245.6" r="2.7"/><circle cx="634.7" cy="262.4" r="3.6"/><circle cx="466" cy="298.4" r="2.5"/><circle cx="22.9" cy="286.9" r="3.3"/><circle cx="38.9" cy="232.7" r="3.1"/><circle cx="550.2" cy="227.9" r="3.7"/><circle cx="285.1" cy="212.3" r="2.3"/><circle cx="52" cy="259.4" r="3.1"/><circle cx="288.4" cy="233.5" r="3.5"/><circle cx="420.8" cy="262.2" r="2.7"/><circle cx="409.1" cy="344" r="3.4"/><circle cx="602.4" cy="257.3" r="3"/><circle cx="183.7" cy="230.4" r="2.2"/><circle cx="300.3" cy="319.2" r="2.4"/><circle cx="108.2" cy="196.3" r="3.1"/><circle cx="73.8" cy="262" r="3.5"/><circle cx="94.4" cy="351" r="3.6"/><circle cx="425.6" cy="245.7" r="2.9"/><circle cx="-6.8" cy="272.4" r="2.4"/><circle cx="619.3" cy="240.9" r="3.7"/><circle cx="315.5" cy="229.4" r="3.2"/><circle cx="365.1" cy="361.5" r="3.1"/><circle cx="543.2" cy="260.6" r="2.8"/><circle cx="23.9" cy="224.6" r="3.6"/><circle cx="132.6" cy="260.2" r="2.3"/><circle cx="75.3" cy="267.3" r="3.7"/><circle cx="131.6" cy="256.3" r="2.4"/><circle cx="341.4" cy="318.9" r="3.4"/><circle cx="185" cy="240.3" r="3.3"/><circle cx="483.3" cy="247" r="2.2"/><circle cx="323.9" cy="276.5" r="2.5"/><circle cx="347.3" cy="277.5" r="3.5"/></g><g fill="none" stroke="#2B2621" stroke-width="1" opacity=".5"><path d="M40 60 q8 -6 16 0 q8 -6 16 0"/><path d="M96 84 q6 -5 12 0 q6 -5 12 0"/></g></svg></figure>
+            <div class="room__text">
+              <p class="room__no">Room 01 · The field</p>
+              <h3>It starts <em>in the ground.</em></h3>
+              <p>Flax and hemp grow from seed in a single season. Cotton opens from a boll, and wool grows back on the sheep every year. Before anything else we ask who grew it, and how.</p>
+              <p class="room__aside">Flax is pulled up by the root, not cut, so that none of the fibre's length is lost.</p>
+            </div>
+          </li>
+          <li class="room">
+            <figure class="room__art"><svg class="scene" viewBox="0 0 640 440" aria-hidden="true" focusable="false">
+<rect width="640" height="440" fill="#EAD9C2"/>
+<rect x="0" y="330" width="640" height="110" fill="#D9C2A2"/>
+<path d="M0 330 H640" stroke="#7E3F25" stroke-width="1" opacity=".5"/><g fill="none" stroke="#7E3F25" stroke-linecap="round"><circle cx="210" cy="196" r="132" stroke-width="5"/><circle cx="210" cy="196" r="123" stroke-width="1.2"/><path d="M210 196 L334 196 M210 196 L321.7 249.8 M210 196 L287.3 292.9 M210 196 L237.6 316.9 M210 196 L182.4 316.9 M210 196 L132.7 292.9 M210 196 L98.3 249.8 M210 196 L86 196 M210 196 L98.3 142.2 M210 196 L132.7 99.1 M210 196 L182.4 75.1 M210 196 L237.6 75.1 M210 196 L287.3 99.1 M210 196 L321.7 142.2 " stroke-width="2"/><circle cx="210" cy="196" r="14" fill="#A65A3A" stroke-width="1.5"/></g><path d="M210 210 L190 400 M210 210 L232 400" stroke="#6F5B3C" stroke-width="5" stroke-linecap="round"/><path d="M240 70 L470 150 M240 322 L470 182" stroke="#2E3A5C" stroke-width="1.2" fill="none"/><g fill="none" stroke="#4E5B3A" stroke-width="2" stroke-linecap="round"><path d="M462 140 h56 l8 26 l-8 26 h-56"/><ellipse cx="490" cy="166" rx="18" ry="22" fill="#CE9878" stroke="#7E3F25"/></g><path d="M474 148 q16 3 32 0 M474 152.4 q16 3 32 0 M474 156.8 q16 3 32 0 M474 161.2 q16 3 32 0 M474 165.6 q16 3 32 0 M474 170 q16 3 32 0 M474 174.4 q16 3 32 0 M474 178.8 q16 3 32 0 M474 183.2 q16 3 32 0 " stroke="#7E3F25" stroke-width=".9" fill="none"/><path d="M340 400 L353 322 H371 L384 400 Z" fill="#D8CBAE" stroke="#8A7350" stroke-width="1.2"/><path d="M343.6 389 H380.4 M345.2 378 H378.8 M346.8 367 H377.2 M348.4 356 H375.6 M350 345 H374 M351.6 334 H372.4 " stroke="#8A7350" stroke-width=".7" opacity=".7"/><path d="M362 322 C362 280 521.6 260 492 190" fill="none" stroke="#8A7350" stroke-width=".9" stroke-dasharray="3 3"/><path d="M394 400 L407 322 H425 L438 400 Z" fill="#8C9570" stroke="#4E5B3A" stroke-width="1.2"/><path d="M397.6 389 H434.4 M399.2 378 H432.8 M400.8 367 H431.2 M402.4 356 H429.6 M404 345 H428 M405.6 334 H426.4 " stroke="#4E5B3A" stroke-width=".7" opacity=".7"/><path d="M416 322 C416 280 510.8 260 492 190" fill="none" stroke="#4E5B3A" stroke-width=".9" stroke-dasharray="3 3"/><path d="M448 400 L461 322 H479 L492 400 Z" fill="#CE9878" stroke="#A65A3A" stroke-width="1.2"/><path d="M451.6 389 H488.4 M453.2 378 H486.8 M454.8 367 H485.2 M456.4 356 H483.6 M458 345 H482 M459.6 334 H480.4 " stroke="#A65A3A" stroke-width=".7" opacity=".7"/><path d="M470 322 C470 280 500 260 492 190" fill="none" stroke="#A65A3A" stroke-width=".9" stroke-dasharray="3 3"/><path d="M502 400 L515 322 H533 L546 400 Z" fill="#46557E" stroke="#2E3A5C" stroke-width="1.2"/><path d="M505.6 389 H542.4 M507.2 378 H540.8 M508.8 367 H539.2 M510.4 356 H537.6 M512 345 H536 M513.6 334 H534.4 " stroke="#2E3A5C" stroke-width=".7" opacity=".7"/><path d="M524 322 C524 280 489.2 260 492 190" fill="none" stroke="#2E3A5C" stroke-width=".9" stroke-dasharray="3 3"/><path d="M556 400 L569 322 H587 L600 400 Z" fill="#E6DCC6" stroke="#8A7350" stroke-width="1.2"/><path d="M559.6 389 H596.4 M561.2 378 H594.8 M562.8 367 H593.2 M564.4 356 H591.6 M566 345 H590 M567.6 334 H588.4 " stroke="#8A7350" stroke-width=".7" opacity=".7"/><path d="M578 322 C578 280 478.4 260 492 190" fill="none" stroke="#8A7350" stroke-width=".9" stroke-dasharray="3 3"/><g fill="none" stroke="#2B2621" stroke-width="1"><circle cx="492" cy="232" r="4"/><circle cx="492" cy="254" r="4"/></g></svg></figure>
+            <div class="room__text">
+              <p class="room__no">Room 02 · The mill</p>
+              <h3>Fibre <em>becomes yarn.</em></h3>
+              <p>Combed fibres are drawn out and twisted together. More twist makes a yarn strong and smooth; less twist keeps it soft and lofty. Every fibre asks for something slightly different.</p>
+              <p class="room__aside">Linen is often spun wet, which lets the fibres lie flat and gives the yarn its quiet shine.</p>
+            </div>
+          </li>
+          <li class="room">
+            <figure class="room__art"><svg class="scene" viewBox="0 0 640 440" aria-hidden="true" focusable="false">
+<rect width="640" height="440" fill="#E3E0D0"/>
+<g stroke="#4E5B3A" stroke-linecap="round" fill="none"><path d="M120 40 V420 M520 40 V420" stroke-width="10"/><path d="M110 56 H530" stroke-width="12"/><path d="M110 330 H530" stroke-width="9"/></g><path d="M150 64 L170 170 L190 252 M157.9 64 L177 170 L196.1 252 M165.8 64 L184 170 L202.2 252 M173.7 64 L191 170 L208.3 252 M181.6 64 L198 170 L214.4 252 M189.5 64 L205 170 L220.5 252 M197.4 64 L212 170 L226.6 252 M205.3 64 L219 170 L232.7 252 M213.2 64 L226 170 L238.8 252 M221.1 64 L233 170 L244.9 252 M229 64 L240 170 L251 252 M236.9 64 L247 170 L257.1 252 M244.8 64 L254 170 L263.2 252 M252.7 64 L261 170 L269.3 252 M260.6 64 L268 170 L275.4 252 M268.5 64 L275 170 L281.5 252 M276.4 64 L282 170 L287.6 252 M284.3 64 L289 170 L293.7 252 M292.2 64 L296 170 L299.8 252 M300.1 64 L303 170 L305.9 252 M308 64 L310 170 L312 252 M315.9 64 L317 170 L318.1 252 M323.8 64 L324 170 L324.2 252 M331.7 64 L331 170 L330.3 252 M339.6 64 L338 170 L336.4 252 M347.5 64 L345 170 L342.5 252 M355.4 64 L352 170 L348.6 252 M363.3 64 L359 170 L354.7 252 M371.2 64 L366 170 L360.8 252 M379.1 64 L373 170 L366.9 252 M387 64 L380 170 L373 252 M394.9 64 L387 170 L379.1 252 M402.8 64 L394 170 L385.2 252 M410.7 64 L401 170 L391.3 252 M418.6 64 L408 170 L397.4 252 M426.5 64 L415 170 L403.5 252 M434.4 64 L422 170 L409.6 252 M442.3 64 L429 170 L415.7 252 M450.2 64 L436 170 L421.8 252 M458.1 64 L443 170 L427.9 252 M466 64 L450 170 L434 252 M473.9 64 L457 170 L440.1 252 M481.8 64 L464 170 L446.2 252 M489.7 64 L471 170 L452.3 252 " stroke="#6F5B3C" stroke-width=".9" fill="none"/><g stroke="#2B2621" fill="none"><path d="M140 160 H500" stroke-width="3"/><path d="M140 182 H500" stroke-width="3"/><path d="M150 160 V182 M157.5 160 V182 M165 160 V182 M172.5 160 V182 M180 160 V182 M187.5 160 V182 M195 160 V182 M202.5 160 V182 M210 160 V182 M217.5 160 V182 M225 160 V182 M232.5 160 V182 M240 160 V182 M247.5 160 V182 M255 160 V182 M262.5 160 V182 M270 160 V182 M277.5 160 V182 M285 160 V182 M292.5 160 V182 M300 160 V182 M307.5 160 V182 M315 160 V182 M322.5 160 V182 M330 160 V182 M337.5 160 V182 M345 160 V182 M352.5 160 V182 M360 160 V182 M367.5 160 V182 M375 160 V182 M382.5 160 V182 M390 160 V182 M397.5 160 V182 M405 160 V182 M412.5 160 V182 M420 160 V182 M427.5 160 V182 M435 160 V182 M442.5 160 V182 M450 160 V182 M457.5 160 V182 M465 160 V182 M472.5 160 V182 " stroke-width=".6" opacity=".6"/></g><rect x="190" y="252" width="268" height="72" fill="#CE9878"/><rect x="190" y="252" width="268" height="72" fill="url(#tx-hemp)"/><rect x="190" y="252" width="268" height="72" fill="url(#gm-shade)"/><path d="M196 238 C240 226 300 226 330 236 L338 244 C300 250 240 250 196 246 Z" fill="#A65A3A" stroke="#7E3F25"/><ellipse cx="324" cy="352" rx="210" ry="16" fill="#8C9570" stroke="#3A4429"/><path d="M114 352 v8 a210 16 0 0 0 420 0 v-8" fill="#6D7852" stroke="#3A4429"/><path d="M190 324 C190 340 458 340 458 324" fill="none" stroke="#7E3F25" stroke-width="1"/></svg></figure>
+            <div class="room__text">
+              <p class="room__no">Room 03 · The loom</p>
+              <h3>Yarn <em>becomes cloth.</em></h3>
+              <p>Warp threads run the length of the cloth and weft threads cross them. Over-under-over gives a plain weave. Step the pattern along by one and you get the diagonal of a twill, like the indigo cloth of our chore jacket.</p>
+              <p class="room__aside">Wool takes a different route: it is knitted, one looped row hanging from the last.</p>
+            </div>
+          </li>
+          <li class="room">
+            <figure class="room__art"><svg class="scene" viewBox="0 0 640 440" aria-hidden="true" focusable="false">
+<rect width="640" height="440" fill="#E9E1D3"/>
+<path d="M40 120 H600 L640 440 H0 Z" fill="#D6C7A6"/>
+<path d="M40 120 H600" stroke="#6E5E40" stroke-width="1.2"/><g fill="#F4ECDD" stroke="#2E3A5C" stroke-width="1" stroke-dasharray="6 4"><path d="M120 170 L250 160 L268 300 L230 380 L110 370 L100 260 Z"/><path d="M300 160 L400 158 L420 250 L300 262 Z"/><path d="M296 290 L430 282 L450 400 L280 410 Z"/></g><g stroke="#2E3A5C" stroke-width="1" fill="none"><path d="M180 200 V340 M174 208 L180 200 L186 208 M174 332 L180 340 L186 332"/><path d="M360 300 V392 M354 308 L360 300 L366 308"/></g><g fill="none" stroke="#2E3A5C" stroke-width=".9" font-family="inherit"><path d="M126 190 h40"/></g><g fill="none" stroke="#2B2621" stroke-width="2.2" stroke-linecap="round"><circle cx="500" cy="330" r="16"/><circle cx="534" cy="352" r="16"/><path d="M512 318 L600 220 M520 340 L606 236"/></g><path d="M440 170 C500 140 560 210 620 176" stroke="#E7A983" stroke-width="11" fill="none" opacity=".9"/><path d="M440 170 v8 M444.6 171.8 v4 M449.2 173.7 v4 M453.8 175.5 v4 M458.5 177.3 v4 M463.1 179 v8 M467.7 180.7 v4 M472.3 182.3 v4 M476.9 183.9 v4 M481.5 185.3 v4 M486.2 186.7 v8 M490.8 188 v4 M495.4 189.1 v4 M500 190.2 v4 M504.6 191.1 v4 M509.2 191.9 v8 M513.8 192.6 v4 M518.5 193.2 v4 M523.1 193.6 v4 M527.7 193.9 v4 M532.3 194 v8 M536.9 194 v4 M541.5 193.8 v4 M546.2 193.5 v4 M550.8 193.1 v4 M555.4 192.5 v8 M560 191.8 v4 M564.6 191 v4 M569.2 190 v4 M573.8 189 v4 M578.5 187.8 v8 M583.1 186.5 v4 M587.7 185.1 v4 M592.3 183.6 v4 M596.9 182.1 v4 M601.5 180.4 v8 M606.2 178.7 v4 M610.8 177 v4 M615.4 175.2 v4 M620 173.4 v4 " stroke="#7E3F25" stroke-width=".8"/><g><rect x="66" y="392" width="28" height="36" fill="#46557E"/><rect x="62" y="388" width="36" height="6" fill="#9C7F57"/><rect x="62" y="426" width="36" height="6" fill="#9C7F57"/></g><g><rect x="104" y="392" width="28" height="36" fill="#A65A3A"/><rect x="100" y="388" width="36" height="6" fill="#9C7F57"/><rect x="100" y="426" width="36" height="6" fill="#9C7F57"/></g><g><rect x="142" y="392" width="28" height="36" fill="#4E5B3A"/><rect x="138" y="388" width="36" height="6" fill="#9C7F57"/><rect x="138" y="426" width="36" height="6" fill="#9C7F57"/></g><circle cx="560" cy="404" r="22" fill="#A65A3A"/><g stroke="#2B2621" stroke-width="1.2"><path d="M552 392 l-6 -14 M566 390 l4 -15 M574 400 l12 -9"/></g><g fill="#2B2621"><circle cx="546" cy="378" r="2.4"/><circle cx="570" cy="375" r="2.4"/><circle cx="586" cy="391" r="2.4"/></g></svg></figure>
+            <div class="room__text">
+              <p class="room__no">Room 04 · The workroom</p>
+              <h3>Cloth <em>becomes a garment.</em></h3>
+              <p>Paper patterns are nested tightly on the cloth before anything is cut, and the offcuts become pockets, facings and the selvedge-edged Market Tote. Then each piece is sewn, pressed and checked by hand.</p>
+              <p class="room__aside">Every garment leaves with what it needs to be repaired. More on that below.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLLECTION ============ -->
+<section id="collection" class="collection" aria-labelledby="collection-title">
+  <header class="collection__head">
+    <div>
+      <p class="eyebrow">Autumn / Winter 2026</p>
+      <h2 id="collection-title" class="stitch-in">Eight pieces, <em>four fibres.</em></h2>
+    </div>
+    <div class="filters" role="group" aria-label="Filter the collection by material">
+      <button class="chip" type="button" aria-pressed="true" data-filter="all">All</button>
+      <button class="chip" type="button" aria-pressed="false" data-filter="linen"><span class="chip__sw sw--linen" aria-hidden="true"></span>Linen</button>
+      <button class="chip" type="button" aria-pressed="false" data-filter="wool"><span class="chip__sw sw--wool" aria-hidden="true"></span>Wool</button>
+      <button class="chip" type="button" aria-pressed="false" data-filter="hemp"><span class="chip__sw sw--hemp" aria-hidden="true"></span>Hemp</button>
+      <button class="chip" type="button" aria-pressed="false" data-filter="cotton"><span class="chip__sw sw--cotton" aria-hidden="true"></span>Cotton</button>
+      <p class="filters__count" id="look-count" aria-live="polite">Showing all 8 pieces</p>
+    </div>
+  </header>
+  <ul class="looks" id="looks">
+<li class="look" data-mat="linen" data-id="field-shirt" style="--i:0">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="field-shirt">
+    <span class="look__plate look__plate--linen">
+      <svg class="look__svg" viewBox="156 82 488 486" aria-hidden="true" focusable="false"><g class="gm " data-garment="shirt">
+<ellipse cx="400" cy="526" rx="191.4" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="#D8CBAE"/>
+<path d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="url(#tx-linen)"/><path d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="url(#tx-linen-slub)"/>
+<path d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M362 118 L300 138 L232 170 L192 318 L238 330 L268 222 L272 512 L528 512 L532 222 L562 330 L608 318 L568 170 L500 138 L438 118 L400 152 Z" fill="none" stroke="#6F5B3C" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M362 118 L392 168 L400 152 L408 168 L438 118 M400 160 V512 M310 214 h56 v52 h-56 z M238 330 L226 304 M562 330 L574 304" fill="none" stroke="#6F5B3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+<circle class="gm__btn" cx="400" cy="200" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="262" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="324" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="386" r="5" fill="#6F5B3C"/><circle class="gm__btn" cx="400" cy="448" r="5" fill="#6F5B3C"/>
+</g></svg>
+      <span class="look__no" aria-hidden="true">01</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Field Shirt</span>
+      <span class="look__mat">Linen · Flax</span>
+      <span class="look__price">£148</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="linen" data-id="long-field-dress" style="--i:1">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="long-field-dress">
+    <span class="look__plate look__plate--linen">
+      <svg class="look__svg" viewBox="202 74 396 522" aria-hidden="true" focusable="false"><g class="gm " data-garment="dress">
+<ellipse cx="400" cy="554" rx="149" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M360 110 L322 112 L302 190 L320 292 L238 540 L562 540 L480 292 L498 190 L478 112 L440 110 L400 150 Z" fill="#D8CBAE"/>
+<path d="M360 110 L322 112 L302 190 L320 292 L238 540 L562 540 L480 292 L498 190 L478 112 L440 110 L400 150 Z" fill="url(#tx-linen)"/><path d="M360 110 L322 112 L302 190 L320 292 L238 540 L562 540 L480 292 L498 190 L478 112 L440 110 L400 150 Z" fill="url(#tx-linen-slub)"/>
+<path d="M360 110 L322 112 L302 190 L320 292 L238 540 L562 540 L480 292 L498 190 L478 112 L440 110 L400 150 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M360 110 L322 112 L302 190 L320 292 L238 540 L562 540 L480 292 L498 190 L478 112 L440 110 L400 150 Z" fill="none" stroke="#6F5B3C" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M360 110 Q400 168 440 110 M318 292 Q400 306 482 292 M300 470 Q400 486 500 470" fill="none" stroke="#6F5B3C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+
+</g></svg>
+      <span class="look__no" aria-hidden="true">02</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Long Field Dress</span>
+      <span class="look__mat">Linen · Flax</span>
+      <span class="look__price">£196</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="wool" data-id="shepherd-jumper" style="--i:2">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="shepherd-jumper">
+    <span class="look__plate look__plate--wool">
+      <svg class="look__svg" viewBox="162 86 476 470" aria-hidden="true" focusable="false"><g class="gm " data-garment="jumper">
+<ellipse cx="400" cy="514" rx="185.8" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="#8C9570"/>
+<path d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="url(#tx-wool)"/>
+<path d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M365 122 L300 140 L236 176 L198 356 L246 364 L276 236 L280 500 L520 500 L524 236 L554 364 L602 356 L564 176 L500 140 L435 122 L420 138 L400 143 L380 138 Z" fill="none" stroke="#3A4429" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M365 122 Q400 160 435 122 M372 128 Q400 154 428 128 M282 474 H518 M290 476 V500 M310 476 V500 M330 476 V500 M350 476 V500 M370 476 V500 M390 476 V500 M410 476 V500 M430 476 V500 M450 476 V500 M470 476 V500 M490 476 V500 M510 476 V500 M204 330 L250 338 M596 330 L550 338" fill="none" stroke="#3A4429" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+
+</g></svg>
+      <span class="look__no" aria-hidden="true">03</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Shepherd Jumper</span>
+      <span class="look__mat">Wool · Moss</span>
+      <span class="look__price">£210</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="wool" data-id="fold-scarf" style="--i:3">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="fold-scarf">
+    <span class="look__plate look__plate--wool">
+      <svg class="look__svg" viewBox="234 74 302 522" aria-hidden="true" focusable="false"><g class="gm " data-garment="scarf">
+<ellipse cx="400" cy="554" rx="105.8" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M330 110 L470 110 L452 410 L500 520 L420 540 L384 432 L352 540 L270 520 L340 408 Z" fill="#8C9570"/>
+<path d="M330 110 L470 110 L452 410 L500 520 L420 540 L384 432 L352 540 L270 520 L340 408 Z" fill="url(#tx-wool)"/>
+<path d="M330 110 L470 110 L452 410 L500 520 L420 540 L384 432 L352 540 L270 520 L340 408 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M330 110 L470 110 L452 410 L500 520 L420 540 L384 432 L352 540 L270 520 L340 408 Z" fill="none" stroke="#3A4429" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M340 408 Q396 392 452 410 M274 520 l-6 18 M290 524 l-4 18 M306 528 l-3 18 M322 532 l-2 18 M338 536 l-1 18 M424 540 l2 18 M440 536 l3 18 M456 532 l4 18 M472 528 l5 18 M488 524 l6 18" fill="none" stroke="#3A4429" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+
+</g></svg>
+      <span class="look__no" aria-hidden="true">04</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Fold Scarf</span>
+      <span class="look__mat">Wool · Moss</span>
+      <span class="look__price">£78</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="hemp" data-id="carpenter-smock" style="--i:4">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="carpenter-smock">
+    <span class="look__plate look__plate--hemp">
+      <svg class="look__svg" viewBox="178 84 444 502" aria-hidden="true" focusable="false"><g class="gm " data-garment="smock">
+<ellipse cx="400" cy="544" rx="171.1" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="#CE9878"/>
+<path d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="url(#tx-hemp)"/>
+<path d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M360 120 L300 136 L250 170 L214 300 L256 308 L282 230 L262 530 L538 530 L518 230 L544 308 L586 300 L550 170 L500 136 L440 120 L400 160 Z" fill="none" stroke="#7E3F25" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M360 120 L400 160 L440 120 M290 200 Q400 222 510 200 M330 380 h140 v74 h-140 z M400 380 v74 M266 500 H534" fill="none" stroke="#7E3F25" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+
+</g></svg>
+      <span class="look__no" aria-hidden="true">05</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Carpenter Smock</span>
+      <span class="look__mat">Hemp · Clay</span>
+      <span class="look__price">£164</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="hemp" data-id="workroom-trousers" style="--i:5">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="workroom-trousers">
+    <span class="look__plate look__plate--hemp">
+      <svg class="look__svg" viewBox="242 84 316 502" aria-hidden="true" focusable="false"><g class="gm " data-garment="trousers">
+<ellipse cx="400" cy="544" rx="112.2" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M300 120 L500 120 L522 530 L432 530 L403 252 L397 252 L368 530 L278 530 Z" fill="#D6C7A6"/>
+<path d="M300 120 L500 120 L522 530 L432 530 L403 252 L397 252 L368 530 L278 530 Z" fill="url(#tx-hemp)"/>
+<path d="M300 120 L500 120 L522 530 L432 530 L403 252 L397 252 L368 530 L278 530 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M300 120 L500 120 L522 530 L432 530 L403 252 L397 252 L368 530 L278 530 Z" fill="none" stroke="#6E5E40" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M300 142 H500 M400 142 V252 M318 168 Q340 200 352 168 M482 168 Q460 200 448 168 M284 500 H366 M434 500 H516" fill="none" stroke="#6E5E40" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="none"/>
+<circle class="gm__btn" cx="400" cy="131" r="5" fill="#6E5E40"/>
+</g></svg>
+      <span class="look__no" aria-hidden="true">06</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Workroom Trousers</span>
+      <span class="look__mat">Hemp · Raw</span>
+      <span class="look__price">£138</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="cotton" data-id="chore-jacket" style="--i:6">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="chore-jacket">
+    <span class="look__plate look__plate--cotton">
+      <svg class="look__svg" viewBox="160 80 480 486" aria-hidden="true" focusable="false"><g class="gm " data-garment="jacket">
+<ellipse cx="400" cy="524" rx="187.7" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="#46557E"/>
+<path d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="url(#tx-cotton)"/>
+<path d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M358 116 L292 136 L226 168 L196 346 L244 354 L270 226 L268 510 L532 510 L530 226 L556 354 L604 346 L574 168 L508 136 L442 116 L400 170 Z" fill="none" stroke="#1F2842" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M358 116 L376 176 L400 170 L424 176 L442 116 M394 176 V510 M300 250 h58 v56 h-58 z M290 380 h70 v70 h-70 z M440 380 h70 v70 h-70 z M200 320 L246 328 M600 320 L554 328" fill="none" stroke="#1F2842" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 3"/>
+<circle class="gm__btn" cx="394" cy="214" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="280" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="346" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="412" r="5" fill="#1F2842"/><circle class="gm__btn" cx="394" cy="478" r="5" fill="#1F2842"/>
+</g></svg>
+      <span class="look__no" aria-hidden="true">07</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Chore Jacket</span>
+      <span class="look__mat">Cotton · Indigo</span>
+      <span class="look__price">£225</span>
+    </span>
+  </button>
+</li>
+<li class="look" data-mat="cotton" data-id="market-tote" style="--i:7">
+  <button class="look__btn" type="button" aria-haspopup="dialog" aria-controls="look-dialog" data-id="market-tote">
+    <span class="look__plate look__plate--cotton">
+      <svg class="look__svg" viewBox="212 214 376 362" aria-hidden="true" focusable="false"><g class="gm " data-garment="tote">
+<ellipse cx="400" cy="534" rx="139.8" ry="16" fill="url(#gm-floor)"/>
+<path class="gm__base" d="M270 250 L530 250 L552 520 L248 520 Z" fill="#46557E"/>
+<path d="M270 250 L530 250 L552 520 L248 520 Z" fill="url(#tx-cotton)"/>
+<path d="M270 250 L530 250 L552 520 L248 520 Z" fill="url(#gm-shade)"/>
+<path class="gm__line" d="M270 250 L530 250 L552 520 L248 520 Z" fill="none" stroke="#1F2842" stroke-width="1.6" stroke-linejoin="round"/>
+<path class="gm__detail" d="M318 250 C318 130 482 130 482 250 M338 250 C338 154 462 154 462 250 M276 300 H524" fill="none" stroke="#1F2842" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 3"/>
+
+</g></svg>
+      <span class="look__no" aria-hidden="true">08</span>
+    </span>
+    <span class="look__meta">
+      <span class="look__name">Market Tote</span>
+      <span class="look__mat">Cotton · Indigo</span>
+      <span class="look__price">£54</span>
+    </span>
+  </button>
+</li>
+  </ul>
+  <p class="collection__note">Prices are illustrative. Terra &amp; Thread is a concept brand, and nothing here is for sale.</p>
+</section>
+
+<dialog class="look-dialog" id="look-dialog" aria-labelledby="ld-name">
+  <div class="look-dialog__inner">
+    <button class="round-btn look-dialog__close" type="button" id="ld-close" aria-label="Close details"><svg aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button>
+    <div class="look-dialog__art" id="ld-art"></div>
+    <div class="look-dialog__info">
+      <p class="eyebrow" id="ld-mat">Linen</p>
+      <h2 class="look-dialog__name" id="ld-name">Field Shirt</h2>
+      <p class="look-dialog__price"><span id="ld-price">£148</span> <span class="look-dialog__illus">illustrative price</span></p>
+      <p class="look-dialog__note" id="ld-note"></p>
+      <fieldset class="colourways">
+        <legend>Colourway: <span id="ld-colour">Flax</span></legend>
+        <div class="colourways__opts" id="ld-colours"></div>
+      </fieldset>
+      <dl class="look-dialog__facts">
+        <div><dt>Care</dt><dd id="ld-care"></dd></div>
+        <div><dt>Made to mend</dt><dd id="ld-mend"></dd></div>
+      </dl>
+      <a class="btn" href="#reserve" id="ld-reserve">Reserve from the first run <svg aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</dialog>
+
+<!-- ============ MATERIALS (swatch book) ============ -->
+<section id="materials" class="materials" aria-labelledby="materials-title">
+  <div class="materials__grid">
+    <div class="swatchbook">
+      <p class="eyebrow">The swatch book</p>
+      <h2 id="materials-title" class="stitch-in">Feel it <em>before you wear it.</em></h2>
+      <div class="book" id="book" role="radiogroup" aria-label="Material swatches">
+        <button class="book__sw book__sw--linen" type="button" role="radio" aria-checked="true" data-mat="linen" tabindex="0"><span class="book__tag">01 · Linen</span></button>
+        <button class="book__sw book__sw--wool" type="button" role="radio" aria-checked="false" data-mat="wool" tabindex="-1"><span class="book__tag">02 · Wool</span></button>
+        <button class="book__sw book__sw--hemp" type="button" role="radio" aria-checked="false" data-mat="hemp" tabindex="-1"><span class="book__tag">03 · Hemp</span></button>
+        <button class="book__sw book__sw--cotton" type="button" role="radio" aria-checked="false" data-mat="cotton" tabindex="-1"><span class="book__tag">04 · Cotton</span></button>
+      </div>
+      <p class="book__hint">Select a swatch, or use the arrow keys, to turn the book.</p>
+    </div>
+
+    <article class="notes" id="mat-notes" aria-live="polite">
+      <p class="notes__kicker" id="mn-kicker">Swatch 01</p>
+      <h3 class="notes__title" id="mn-title">Linen</h3>
+      <p class="notes__lede" id="mn-lede">The oldest cloth we know how to make, and still one of the best for warm days.</p>
+      <dl class="notes__dl">
+        <div><dt>Fibre</dt><dd id="mn-fibre">Flax stalk, a bast fibre</dd></div>
+        <div><dt>Spun</dt><dd id="mn-spun">Wet-spun for a smooth, lustrous yarn</dd></div>
+        <div><dt>Made into</dt><dd id="mn-cloth">Plain weave, washed after sewing</dd></div>
+        <div><dt>Hand feel</dt><dd id="mn-hand">Cool, dry and crisp at first</dd></div>
+        <div><dt>How it ages</dt><dd id="mn-ages">Softer and paler with every wash</dd></div>
+        <div><dt>Care</dt><dd id="mn-care">Wash cool and dry on a line</dd></div>
+      </dl>
+      <button class="link-thread" type="button" id="mn-show">See the linen pieces</button>
+    </article>
+  </div>
+</section>
+
+<!-- ============ MENDING (story interface) ============ -->
+<section id="mending" class="mending" aria-labelledby="mending-title">
+  <div class="mending__grid">
+    <div class="mending__copy">
+      <p class="eyebrow">Made to be mended</p>
+      <h2 id="mending-title" class="stitch-in">A hole is the <em>start of a story.</em></h2>
+      <p class="mending__lede">Every garment leaves our workroom with what it needs to be repaired: spare buttons, matched thread or yarn, and a scrap of its own cloth. A darn is a weave in miniature, warp first and then weft, over and under.</p>
+      <ol class="chapters" id="chapters">
+        <li class="chapter is-active" data-from="0"><span class="chapter__no">i.</span><div><h3>Wear it</h3><p>Elbows, knees and pocket corners take the most strain. That is where the story shows first.</p></div></li>
+        <li class="chapter" data-from="1"><span class="chapter__no">ii.</span><div><h3>Lay the warp</h3><p>Run parallel threads across the hole, anchored well into sound stitches on either side.</p></div></li>
+        <li class="chapter" data-from="50"><span class="chapter__no">iii.</span><div><h3>Weave the weft</h3><p>Cross them at right angles, over one and under one, alternating every row.</p></div></li>
+        <li class="chapter" data-from="100"><span class="chapter__no">iv.</span><div><h3>Pass it on</h3><p>A visible mend is a mark of use, not of failure. Wear it with some pride.</p></div></li>
+      </ol>
+    </div>
+    <figure class="mend">
+      <div class="mend__frame"><svg class="mend__svg" id="mend-svg" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+<defs><pattern id="knit-big" width="14" height="15" patternUnits="userSpaceOnUse" x="6" y="12"><path d="M0 1.4 l7 10 l7 -10" fill="none" stroke="#3A4429" stroke-width=".8" stroke-linecap="round" opacity=".45"/><path d="M0 0 l7 10 l7 -10" fill="none" stroke="#B9C09E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/></pattern></defs>
+<rect width="400" height="400" fill="#7D8662"/>
+<rect width="400" height="400" fill="url(#knit-big)"/>
+<path class="mend__hole" d="M270.4 200 L269.2 206.7 L272.1 214.1 L269.8 221.1 L261.8 226 L255.2 230.9 L249.4 236.1 L246.1 243.8 L239.1 249.4 L229.6 252.2 L219.9 254.2 L210.2 256.4 L200 255.5 L190.3 253.9 L180.6 252.9 L173.2 247.3 L163.6 246 L155.1 242.7 L147.5 238.3 L141.2 232.9 L135.2 227.3 L130.5 221 L128.5 214 L124.6 207.2 L127.4 200 L123.5 192.7 L132.7 186.8 L135.4 180.5 L134.6 172.5 L137.9 165.2 L149.5 163.2 L157.6 159.7 L164.3 154.8 L173.2 152.9 L181 148.2 L190.1 145.3 L200 145.3 L209.6 147 L220 145.7 L226.7 152.9 L238.5 151.4 L247.1 155.3 L252 162.1 L257.6 167.8 L261.8 174 L269.5 179 L268 186.7 L271.5 193.1 L275.4 200 Z" fill="#2B2621" fill-opacity=".86"/>
+<path d="M270.4 200 L269.2 206.7 L272.1 214.1 L269.8 221.1 L261.8 226 L255.2 230.9 L249.4 236.1 L246.1 243.8 L239.1 249.4 L229.6 252.2 L219.9 254.2 L210.2 256.4 L200 255.5 L190.3 253.9 L180.6 252.9 L173.2 247.3 L163.6 246 L155.1 242.7 L147.5 238.3 L141.2 232.9 L135.2 227.3 L130.5 221 L128.5 214 L124.6 207.2 L127.4 200 L123.5 192.7 L132.7 186.8 L135.4 180.5 L134.6 172.5 L137.9 165.2 L149.5 163.2 L157.6 159.7 L164.3 154.8 L173.2 152.9 L181 148.2 L190.1 145.3 L200 145.3 L209.6 147 L220 145.7 L226.7 152.9 L238.5 151.4 L247.1 155.3 L252 162.1 L257.6 167.8 L261.8 174 L269.5 179 L268 186.7 L271.5 193.1 L275.4 200 Z" fill="none" stroke="#B9C09E" stroke-width="2" stroke-dasharray="3 4" opacity=".7"/>
+<g class="darns" fill="none" stroke="#C97A55" stroke-width="3.4" stroke-linecap="round"><path class="darn darn--warp" pathLength="1" d="M118 175.3 V224.7"/><path class="darn darn--warp" pathLength="1" d="M127 162 V238"/><path class="darn darn--warp" pathLength="1" d="M136 153.3 V246.7"/><path class="darn darn--warp" pathLength="1" d="M145 146.9 V253.1"/><path class="darn darn--warp" pathLength="1" d="M154 142 V258"/><path class="darn darn--warp" pathLength="1" d="M163 138.3 V261.7"/><path class="darn darn--warp" pathLength="1" d="M172 135.5 V264.5"/><path class="darn darn--warp" pathLength="1" d="M181 133.6 V266.4"/><path class="darn darn--warp" pathLength="1" d="M190 132.4 V267.6"/><path class="darn darn--warp" pathLength="1" d="M199 132 V268"/><path class="darn darn--warp" pathLength="1" d="M208 132.3 V267.7"/><path class="darn darn--warp" pathLength="1" d="M217 133.3 V266.7"/><path class="darn darn--warp" pathLength="1" d="M226 135 V265"/><path class="darn darn--warp" pathLength="1" d="M235 137.6 V262.4"/><path class="darn darn--warp" pathLength="1" d="M244 141.1 V258.9"/><path class="darn darn--warp" pathLength="1" d="M253 145.7 V254.3"/><path class="darn darn--warp" pathLength="1" d="M262 151.7 V248.3"/><path class="darn darn--warp" pathLength="1" d="M271 159.8 V240.2"/><path class="darn darn--warp" pathLength="1" d="M280 171.7 V228.3"/></g>
+<g class="darns" fill="none" stroke="#E2A27F" stroke-width="3.4" stroke-linecap="round"><path class="darn darn--weft" pathLength="1" d="M172 140 H181 M190 140 H199 M208 140 H217 M226 140 H229.9 "/><path class="darn darn--weft" pathLength="1" d="M148 149 H154 M163 149 H172 M181 149 H190 M199 149 H208 M217 149 H226 M235 149 H244 "/><path class="darn darn--weft" pathLength="1" d="M136 158 H145 M154 158 H163 M172 158 H181 M190 158 H199 M208 158 H217 M226 158 H235 M244 158 H253 M262 158 H264.9 "/><path class="darn darn--weft" pathLength="1" d="M127 167 H136 M145 167 H154 M163 167 H172 M181 167 H190 M199 167 H208 M217 167 H226 M235 167 H244 M253 167 H262 M271 167 H273.7 "/><path class="darn darn--weft" pathLength="1" d="M120.3 176 H127 M136 176 H145 M154 176 H163 M172 176 H181 M190 176 H199 M208 176 H217 M226 176 H235 M244 176 H253 M262 176 H271 "/><path class="darn darn--weft" pathLength="1" d="M127 185 H136 M145 185 H154 M163 185 H172 M181 185 H190 M199 185 H208 M217 185 H226 M235 185 H244 M253 185 H262 M271 185 H280 "/><path class="darn darn--weft" pathLength="1" d="M118 194 H127 M136 194 H145 M154 194 H163 M172 194 H181 M190 194 H199 M208 194 H217 M226 194 H235 M244 194 H253 M262 194 H271 M280 194 H285.6 "/><path class="darn darn--weft" pathLength="1" d="M127 203 H136 M145 203 H154 M163 203 H172 M181 203 H190 M199 203 H208 M217 203 H226 M235 203 H244 M253 203 H262 M271 203 H280 "/><path class="darn darn--weft" pathLength="1" d="M118 212 H127 M136 212 H145 M154 212 H163 M172 212 H181 M190 212 H199 M208 212 H217 M226 212 H235 M244 212 H253 M262 212 H271 M280 212 H284.5 "/><path class="darn darn--weft" pathLength="1" d="M127 221 H136 M145 221 H154 M163 221 H172 M181 221 H190 M199 221 H208 M217 221 H226 M235 221 H244 M253 221 H262 M271 221 H280 "/><path class="darn darn--weft" pathLength="1" d="M124 230 H127 M136 230 H145 M154 230 H163 M172 230 H181 M190 230 H199 M208 230 H217 M226 230 H235 M244 230 H253 M262 230 H271 "/><path class="darn darn--weft" pathLength="1" d="M131.8 239 H136 M145 239 H154 M163 239 H172 M181 239 H190 M199 239 H208 M217 239 H226 M235 239 H244 M253 239 H262 "/><path class="darn darn--weft" pathLength="1" d="M143.1 248 H145 M154 248 H163 M172 248 H181 M190 248 H199 M208 248 H217 M226 248 H235 M244 248 H253 "/><path class="darn darn--weft" pathLength="1" d="M163 257 H172 M181 257 H190 M199 257 H208 M217 257 H226 M235 257 H239.1 "/></g>
+</svg>
+        <span class="mend__hoop" aria-hidden="true"></span>
+      </div>
+      <div class="mend__ctl">
+        <label for="mend-range">Darn the elbow</label>
+        <output id="mend-out" for="mend-range">0%</output>
+        <input type="range" id="mend-range" min="0" max="100" step="1" value="0">
+        <button class="btn btn--moss" type="button" id="mend-auto">Mend it for me</button>
+      </div>
+      <figcaption class="mend__cap" id="mend-cap" aria-live="polite">Drag the slider to darn the hole, one thread at a time.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ RESERVE ============ -->
+<section id="reserve" class="reserve" aria-labelledby="reserve-title">
+  <div class="reserve__grid">
+    <div class="reserve__copy">
+      <p class="eyebrow">The first run</p>
+      <h2 id="reserve-title" class="stitch-in">Reserve a piece <em>from the first bolt.</em></h2>
+      <p class="reserve__lede">Each piece is cut in small runs from a single bolt of cloth, so colours match across a run and differ slightly between them. Tell us what you would like, and we will set it aside.</p>
+      <ul class="reserve__list">
+        <li>Small runs, cut to order</li>
+        <li>Repair kit with every piece</li>
+        <li>Free alterations to sleeve and hem length</li>
+      </ul>
+    </div>
+
+    <form class="form" id="reserve-form" novalidate>
+      <p class="form__demo">Portfolio demo: nothing you enter is sent, stored or reserved.</p>
+      <div class="field field--wide">
+        <label for="r-piece">Piece</label>
+        <select id="r-piece" name="piece" required aria-describedby="e-piece">
+          <option value="">Choose a piece</option>
+        </select>
+        <p class="field__err" id="e-piece" aria-live="polite"></p>
+      </div>
+      <fieldset class="field field--wide sizes" aria-describedby="e-size">
+        <legend>Size</legend>
+        <div class="sizes__opts">
+          <label><input type="radio" name="size" value="XS"><span>XS</span></label>
+          <label><input type="radio" name="size" value="S"><span>S</span></label>
+          <label><input type="radio" name="size" value="M"><span>M</span></label>
+          <label><input type="radio" name="size" value="L"><span>L</span></label>
+          <label><input type="radio" name="size" value="XL"><span>XL</span></label>
+        </div>
+        <p class="field__err" id="e-size" aria-live="polite"></p>
+      </fieldset>
+      <div class="field">
+        <label for="r-name">Name</label>
+        <input id="r-name" name="name" type="text" autocomplete="name" required aria-describedby="e-rname">
+        <p class="field__err" id="e-rname" aria-live="polite"></p>
+      </div>
+      <div class="field">
+        <label for="r-email">Email</label>
+        <input id="r-email" name="email" type="email" autocomplete="email" required aria-describedby="e-remail">
+        <p class="field__err" id="e-remail" aria-live="polite"></p>
+      </div>
+      <label class="check field--wide"><input type="checkbox" name="letters" id="r-letters"><span>Send me the field notes when the next fibre arrives.</span></label>
+      <div class="form__foot">
+        <button class="btn" type="submit">Reserve this piece <svg aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+      </div>
+      <div class="form__done" id="reserve-done" tabindex="-1" hidden>
+        <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#tt-mark"/></svg>
+        <p class="form__done-title" id="reserve-done-title">Set aside.</p>
+        <p id="reserve-done-text">This is a portfolio demo: nothing was sent and nothing has been reserved.</p>
+        <button class="link-thread" type="button" id="reserve-again">Make another reservation</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__seam" aria-hidden="true"></div>
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a class="brand" href="#top" aria-label="Terra &amp; Thread, back to the top">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><use href="#tt-mark"/></svg>
+        <span class="brand__word">Terra <i>&amp;</i> Thread</span>
+      </a>
+      <p class="footer__line">Wear the <em>change.</em></p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <p class="footer__label">Visit</p>
+      <ul>
+        <li><a href="#journey">The journey</a></li>
+        <li><a href="#path">Four rooms</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#mending">Mending</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+      </ul>
+    </nav>
+    <div class="credit">
+      <p class="footer__label">Label</p>
+      <p class="credit__by">Designed &amp; built by <a href="https://www.linkedin.com/in/saadbashirmarketing/" target="_blank" rel="noopener" aria-label="Saad Bashir on LinkedIn (opens in a new tab)">Saad Bashir</a></p>
+      <p class="credit__note">Fictional concept brand — portfolio project.</p>
+      <a class="credit__more" href="https://saadbashirportfolio.vercel.app/websites.html">More work <svg aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+  <p class="footer__fine">Terra &amp; Thread is fictional and makes no certification or environmental-impact claims. All illustrations are original; prices are illustrative. Set in Young Serif and Albert Sans.</p>
+</footer>
+</body>
+</html>
